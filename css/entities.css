@@ -1,0 +1,175 @@
+/**
+ * This software is the property of Atilika Inc.  It can only be used
+ * as described in the Software License Agreement and in no other way.
+ *
+ * Copyright © 2012-2013 Atilika Inc.  All rights reserved.
+ */
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+#input {
+    width: 100%;
+    resize: vertical;
+}
+
+#inline-text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.table th {
+    font-weight: 500;
+}
+
+.entity {
+    border: 2px solid transparent;
+    padding: 2px;
+    color: #ffffff;
+    border-radius: 3px;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.entity-legend {
+    border-spacing: 0px 5px;
+    border-collapse: separate;
+}
+
+.entity-highlighted {
+    /*opacity: 0.8;*/
+    /*filter: alpha(opacity=80);*/
+    box-shadow: 0 0 5px 5px rgba(200, 200, 200, .4)
+}
+
+.per {
+    background-color: #698fb3;
+}
+
+.per.entity-highlighted {
+    border-color: #455c73;
+}
+
+.ttl {
+    background-color: #9DE6E6;
+}
+
+.ttl.entity-highlighted {
+    border-color: #6a9999;
+}
+
+.org {
+    background-color: #9BD19B;
+}
+
+.org.entity-highlighted {
+    border-color: #739973;
+}
+
+.loc {
+    background-color: #D699D6;
+}
+
+.loc.entity-highlighted {
+    border-color: #996e99;
+}
+
+.gpe {
+    background-color: #C2A3FF;
+}
+.gpe.entity-highlighted {
+    border-color: #927cbf;
+}
+
+.fac {
+    background-color: #B2CC64;
+}
+.fac.entity-highlighted {
+    border-color: #86994d;
+}
+
+.rel {
+    background-color: #FFA8A8;
+}
+
+.rel.entity-highlighted {
+    border-color: #bf7e7e;
+}
+
+.nat {
+    background-color: #FFC285;
+}
+
+.nat.entity-highlighted {
+    border-color: #bf9367;
+}
+
+.dat {
+    background-color: #ff5f67;
+}
+
+.dat.entity-highlighted {
+    border-color: #bd484e;
+}
+
+.mon {
+    background-color: #b38689;
+}
+
+.mon.entity-highlighted {
+    border-color: #664e4f;
+}
+
+.misc {
+    background-color: #74b2b3;
+}
+
+.misc.entity-highlighted {
+    border-color: #426666;
+}
+
+.prod {
+    background-color: #564ed5;
+}
+
+.prod.entity-highlighted {
+    border-color: #2b286b;
+}
+
+.aud {
+    background-color: #ff6fac;
+}
+
+.aud.entity-highlighted {
+    border-color: #bd5a86;
+}
+
+.sho {
+    background-color: #6ca5ff;
+}
+
+.sho.entity-highlighted {
+    border-color: #4861bd;
+}
+
+.mov {
+    background-color: #7bff95;
+}
+
+.mov.entity-highlighted {
+    border-color: #6bbd71;
+}
+
+.tooltip.in {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#anchorYearValue {
+    height: 12px;
+    width: 34px;
+}

@@ -1,0 +1,36 @@
+<p class="pull-right debug" ng-click="showDebug()">Show debug</p>
+<div class="panel panel-default">
+	<div class="panel-body" ng-if="!debug" bind-once>
+		<div><h3><span bind-once>{{doc.title[0]}}</span><small><a href="{{doc.url}}" bind-once>{{doc.url}}</a></small></h3></div>
+		<div ng-repeat="hlsnippet in hlsnippets">...<span bind-once ng-bind-html="hlsnippet"></span>...</div>
+	</div>
+	<div class="panel-body row" ng-if="debug">
+		<table class="table table-bordered table-condensed md-col-12">
+			<tbody>
+				<tr>
+					<td>dbid</td>
+					<td colspan="2">{{dbid}}</td>
+				</tr>
+				<tr>
+					<td>title</td>
+					<td colspan="2">{{doc.title[0]}}</td>
+				</tr>
+				<tr>
+					<td>content</td>
+					<td colspan="2">{{doc.content[0]}}</td>
+				</tr>
+				<tr>
+					<td>Facets</td>
+					<td>Redacted</td>
+					<td>Extracted</td>
+				</tr>
+				<tr ng-repeat="fieldName in fieldList">
+					<td>{{fieldName}}</td>
+					<td><div ng-repeat="(key, value) in redactedFacets[fieldName]"><span class="entity {{fieldName | lowercase}}">{{key}}</span><span ng-if="value > 1"> x{{value}}</span></div></td>
+					<td><div ng-repeat="(key, value) in rawFacets[fieldName]"><span class="entity {{fieldName | lowercase}}">{{key}}</span><span ng-if="value > 1"> x{{value}}</span></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>

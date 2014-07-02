@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" ng-app="atilika.search">
+<head>
+	<meta charset="UTF-8">
+	<title>Atilika search</title>
+
+	<!-- icon -->
+	<link rel="shortcut icon" href="images/atilika.ico"/>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/entities.css">
+	<link rel="stylesheet" href="css/atilika-search-stylesheet.css">
+	
+
+	<!-- cdn libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-sanitize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+ 
+	
+
+	<!-- application -->
+	<script src="atilika-search.js"></script>
+
+	<!-- function used to format the keyphrases -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="helper/keyphraseformater.js"></script>
+	
+	<!-- modules -->
+	<script src="module/utils/utils.js"></script>
+	<script src="module/dbconfig/dbconfig.js"></script>
+	<script src="module/searchhandler/searchhandler.js"></script>
+	<script src="module/solr/solr.js"></script>
+	<script src="module/searchpane/searchpane.js"></script>
+	<script src="module/facets/facets.js"></script>
+	<script src="module/results/results.js"></script>
+
+    <script src="module/searchbox/searchbox.js"></script>
+    <script src="module/searchsample/searchsample.js"></script>
+
+    
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="atilika-header row">
+			<div class="col-sm-2">
+				<img class="pull-left" src="images/entities.png">
+			</div>
+			<div class="col-sm-8">
+				<H1 class="pull-left">Search</H1>
+			</div>
+			<div class="col-sm-2">
+				<img class="pull-right" src="images/atilika-logo-horizontal-transparent.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-offset-2 col-sm-8">
+				<ul class="nav nav-pills">
+					<li ng-click="mySearchOption=1">Keywords</li>
+					<li ng-click="mySearchOption=2">Examples</li>
+				</ul>
+				
+				<div ng-if="mySearchOption==1">
+                	<atilika-searchpane></atilika-searchpane>
+                </div>
+
+                <div ng-if="mySearchOption==2">
+                	<atilika-searchbox></atilika-searchbox>
+                </div>
+
+            </div>
+     </div>
+
+     <div class="row">
+                <div class="col-sm-2">
+                    <atilika-facetpane></atilika-facetpane>
+                </div>
+                <div class="col-sm-8">
+                    <atilika-resultpane></atilika-resultpane>
+                </div>
+
+            </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+

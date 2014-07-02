@@ -1,0 +1,186 @@
+/* angular bootstrap ui */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+/* media width breakpoints */
+@media (min-width: 768px) {
+	#search-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#search-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#search-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#search-input {
+		width: 500px;
+	}
+}
+
+/* media width breakpoints for positive exmples */
+@media (min-width: 768px) {
+	#pos-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#pos-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#pos-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#pos-input {
+		width: 500px;
+	}
+}
+
+/* media width breakpoints for negative exmples */
+@media (min-width: 768px) {
+	#neg-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#neg-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#neg-input {
+		width: 500px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#neg-input {
+		width: 500px;
+	}
+}
+
+/* header */
+.atilika-header {
+	margin-top: 10px;
+}
+
+/* common */
+
+/* facetpane */
+.facet {
+	cursor: pointer;
+}
+
+atilika-facet-grouping .panel {
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.facet-grouping.panel .panel-title {
+	padding: 0px 5px;
+	border-radius: 4px 4px 0px 0px;
+	font-size: 14px;
+}
+
+.facet-grouping.panel .panel-body {
+	padding: 0px 0px;
+}
+
+.facet-grouping ul li a {
+	padding: 0px 5px;
+	margin: 0px 0px;
+}
+
+.facet-loader {
+	cursor: pointer;
+	color: rgb(168, 168, 168);
+}
+
+/* searchpane */
+atilika-searchpane {
+	margin: 0px 15px;
+}
+
+.hits-counter {
+	padding: 0px 15px;
+}
+
+/* resultpane */
+atilika-result em {
+	font-style: inherit;
+	background-color: #d9edf7;
+	padding: 2px 2px;
+}
+
+atilika-result h3 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+atilika-result .panel {
+	margin-bottom: 10px;
+}
+
+atilika-result .entity {
+	margin-right: 5px;
+}
+
+.debug {
+	cursor: pointer;
+	border-top-right-radius: 4px;
+	padding: 5px;
+	color: white;
+	background-color: rgb(143, 184, 192);
+}
+
+/* use to represent keyphrase*/
+
+.theme {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 6px;
+}
+
+.inline-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.keyphrase {
+    color: #30ae17; // Atilika green dark
+    margin: 4px;
+}
+
+.keyword {
+    background-color: #adff2f;
+}
+
+.keyword-highlighted {
+    color: red;
+}
+
+.tooltip.in {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+
+

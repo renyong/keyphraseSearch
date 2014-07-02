@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+        <form class="pull-left" role="form">
+            <div class="form-group">
+                <label>Positive example</label>
+
+                 <button type="reset" class="btn btn-danger" ng-click="posClear()"><span class="glyphicon glyphicon-remove"></span></button>
+                <textarea class="form-control" id="pos-input"rows=6; ng-model="posQuery">
+                </textarea>
+            </div>
+        </form>
+
+        <label>Phrases from positive example</label>
+        <div id="keyphrase-result"></div>  
+        
+        </div>
+
+        <div class="row">
+        <form class="pull-left" role="form">         
+             <div class="form-group">
+             <label>Negative example</label>
+             <input type="checkbox" id="negSearchOption" ng-false-value="disabled" ng-model="option"> enable
+              <button type="reset" class="btn btn-danger" ng-click="negClear()"><span class="glyphicon glyphicon-remove"></span></button>
+                <textarea disabled class="form-control" id="neg-input"rows=6; ng-model="negQuery">
+                </textarea>
+                
+            </div>
+        </form>
+         <label>Phrases from negative example</label>
+         <div id="neg-keyphrase-result"></div>
+        </div> 
+       
+    </div>
+</div>
+
+<div class="row"> 
+<button type="submit" class="btn btn-primary" ng-click="extract()"><span class="glyphicon glyphicon-search"></span></button>
+</div>
+
+<div class="hits-counter pull-left" ng-if="numFound != undefined" style="margin-top: 14px;">Showing {{numShown}} of {{numFound}} documents</div>

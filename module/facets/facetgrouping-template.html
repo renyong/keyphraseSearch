@@ -1,0 +1,10 @@
+<div class="facet-grouping panel panel-default">
+	<div class="panel-title entity {{css}}" ng-click="isCollapsed = !isCollapsed">
+		<span bind-once ng-bind="fieldName.description"></span><span class="pull-right">{{facets.length}}</span>
+	</div>
+	<div class="panel-body" collapse="isCollapsed">
+		<ul class="nav nav-pills nav-stacked" ng-bind-html="drilledFacets"></ul>
+		<ul class="nav nav-pills nav-stacked" ng-bind-html="cachedFacets"></ul>
+		<ul class="nav nav-pills nav-stacked"><li><a class="facet-loader" ng-click="changeFacetLimit()">{{changeFacetLimitText}}</a></li></ul>
+	</div>
+</div>

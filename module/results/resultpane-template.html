@@ -1,0 +1,10 @@
+<div ng-repeat="doc in docs">
+	<div class="row">
+		<atilika-result class="col-sm-12" doc="doc" hlsnippets="getHlSnippets(doc)"></atilika-result>
+	</div>
+</div>
+<div class="row" ng-if="totalItems > 10">
+	<div class="col-sm-12">
+		<pagination total-items="totalItems" page="currentPage" on-select-page="selectPage(page)" max-size="10" boundary-links="true"></pagination>
+	</div>
+</div>
